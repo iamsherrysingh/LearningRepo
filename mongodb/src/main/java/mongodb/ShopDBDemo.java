@@ -13,13 +13,18 @@ import com.mongodb.client.MongoIterable;
 public class ShopDBDemo {
 
 	static MongoDatabase database;
-	static void connectToDB() {
-	    MongoClient mongoClient = MongoClients.create("mongodb://root:root@192.168.0.100:27017/?authSource=admin");
-		database= mongoClient.getDatabase("shopdb");
+	static void connectToDB(String databaseName) {
+	    try{
+	    	MongoClient mongoClient = MongoClients.create("mongodb://root:root@192.168.0.100:27017/?authSource=admin");
+	    	database= mongoClient.getDatabase(databaseName);
+	    	System.out.println("CONNECTED TO DATABASE: "+databaseName);
+	    }catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public static void main(String[] args) {
-		connectToDB();
+		connectToDB("shopdb");
 		
 		MongoIterable<String> iterableCollections= database.listCollectionNames();
 		for(String collection: iterableCollections) {

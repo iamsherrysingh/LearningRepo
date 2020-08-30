@@ -14,13 +14,18 @@ import model.shoppingdb.collections.Customer;
 public class ShoppingDBDemo {
 
 	static MongoDatabase database;
-	static void connectToDB() {
-	    MongoClient mongoClient = MongoClients.create("mongodb://root:root@192.168.0.100:27017/?authSource=admin");
-		database= mongoClient.getDatabase("shoppingdb");
+	static void connectToDB(String databaseName) {
+	    try{
+	    	MongoClient mongoClient = MongoClients.create("mongodb://root:root@192.168.0.100:27017/?authSource=admin");
+	    	database= mongoClient.getDatabase(databaseName);
+	    	System.out.println("CONNECTED TO DATABASE: "+databaseName);
+	    }catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public static void main(String[] args) {
-		connectToDB();
+		connectToDB("shoppingdb");
 		
 		MongoCollection<Document> customerCollection= database.getCollection("Customer");
 		Document document = new Document("name", "Café Con Leche")
