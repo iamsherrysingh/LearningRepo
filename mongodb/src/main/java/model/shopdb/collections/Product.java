@@ -1,6 +1,6 @@
-package model;
+package model.shopdb.collections;
 
-public class Products {
+public class Product {
 	String name, description;
 	Double price;
 	Specs specs;

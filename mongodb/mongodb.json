@@ -24,13 +24,13 @@ mongo -u "root" -p
 < Enter password: "root" >
 */
 
-use shop
-db.products.insertOne({ name:"T-Shirt", 
+use shopdb
+db.product.insertOne({ name:"T-Shirt", 
 					    price:12.99, 
 						description: "Duke's high quality T-Shirt"})
-db.products.insertOne({ name:"Ravpower 90W 2 port PD Charger", 
+db.product.insertOne({ name:"Ravpower 90W 2 port PD Charger", 
 						price:56.99})
-db.products.insertOne({ name:"T-Shirt", 
+db.product.insertOne({ name:"T-Shirt", 
 						price:12.99, 
 						description: "Gaming PC", 
 						specs: {
@@ -39,4 +39,4 @@ db.products.insertOne({ name:"T-Shirt",
 								gpu: "Nvidia GTX 3080TI"
 						}})
 						
-db.products.find().pretty()
+db.product.find().pretty()
