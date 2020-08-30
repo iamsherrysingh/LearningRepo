@@ -1,17 +1,26 @@
 package mongodb;
 
+import java.util.Arrays;
+
 import org.bson.Document;
 
 import com.mongodb.Block;
 import com.mongodb.ConnectionString;
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.Mongo;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.internal.MongoClientImpl;
 import com.mongodb.MongoClientSettings;
+import com.mongodb.MongoClientURI;
+import com.mongodb.MongoCredential;
+import com.mongodb.ServerAddress;
 
-public class DBdemo {
+public class DBdemo2 {
 
 	static MongoDatabase database;
 	static void connectToDB() {

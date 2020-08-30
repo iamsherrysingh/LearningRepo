@@ -1,34 +1,35 @@
 package model;
 
 public class Specs {
-	String CPU, RAM, GPU;
+	String cpu, ram, gpu;
 
-	public String getCPU() {
-		return CPU;
+	public String getCpu() {
+		return cpu;
 	}
 
-	public void setCPU(String cPU) {
-		CPU = cPU;
+	public void setCpu(String cpu) {
+		this.cpu = cpu;
 	}
 
-	public String getRAM() {
-		return RAM;
+	public String getRam() {
+		return ram;
 	}
 
-	public void setRAM(String rAM) {
-		RAM = rAM;
+	public void setRam(String ram) {
+		this.ram = ram;
 	}
 
-	public String getGPU() {
-		return GPU;
+	public String getGpu() {
+		return gpu;
 	}
 
-	public void setGPU(String gPU) {
-		GPU = gPU;
+	public void setGpu(String gpu) {
+		this.gpu = gpu;
 	}
 
 	@Override
 	public String toString() {
-		return "Specs [CPU=" + CPU + ", RAM=" + RAM + ", GPU=" + GPU + "]";
+		return "Specs [cpu=" + cpu + ", ram=" + ram + ", gpu=" + gpu + "]";
 	}
+	
 }
