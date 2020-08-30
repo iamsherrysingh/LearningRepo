@@ -1,4 +1,4 @@
-package model;
+package model.shopdb.collections;
 
 public class Specs {
 	String cpu, ram, gpu;
