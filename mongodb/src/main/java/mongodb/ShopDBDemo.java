@@ -24,9 +24,12 @@ public class ShopDBDemo {
 	}
 	
 	public static void main(String[] args) {
-		connectToDB("shopdb");
+		String databaseName= "shopdb";
+		connectToDB(databaseName);
 		
 		MongoIterable<String> iterableCollections= database.listCollectionNames();
+		
+		//Collections in database
 		for(String collection: iterableCollections) {
 			System.out.println(collection);
 		}
