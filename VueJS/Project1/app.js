@@ -3,7 +3,7 @@ var vm= new Vue({
     data:{
         message:'Hello World'
     },
-    compute:{},
+    computed:{},
     methods:{},
     template:`<h1>Hello Vue!</h1>`
 })
