@@ -2,9 +2,7 @@
 // If it is Friday, then make it show a ':)'
 const vm = new Vue({
     el: '#root',
-    methods:{
-
-    },
+    methods:{},
     computed:{
         mood: function(){
             if (new Date().getDate() == 5)
@@ -15,7 +13,7 @@ const vm = new Vue({
     },
     template: `
      <div class="date">
-       {{mood}}
+       <h1>Today is {{mood}} day</h1>
      </div>
     `
  });
