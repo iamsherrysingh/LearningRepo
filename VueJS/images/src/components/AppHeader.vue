@@ -2,12 +2,35 @@
     <div class="ui secondary pointing menu">
         <a href="/" class="active item">Image Storage</a>
         
+
+
+        <div class="right menu">
+            <div v-if="isLoggedIn">
+                Gallery
+                Upload
+                Logout
+            </div>
+
+            <a v-else class="ui item" v-on:click="login">
+                login
+            </a>
+        </div>
+
+
+        
     </div>
 </template>
 
 
 <script>
+import { mapActions, mapGetters } from 'vuex';
+
+
 export default {
+    name: 'AppHeader',
+    methods: mapActions(['login']),
+    computed: mapGetters(['isLoggedIn'])
+
     
 }
 </script>
