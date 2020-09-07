@@ -1,4 +1,9 @@
-The repository (for now) holds a MongoDB learning project.
+The repository (for now) holds 
+1. Multiple VueJS projects I have been working on - t
+2. A MongoDB learning project
+
+README.md for the individuals projects reside in the project's root directory
+
 Instructions to setup and populate MongoDB database below.
 ## Setup MongoDB in Docker
 Install docker for Linux, MacOS or Windows and copy+paste below commands in the terminal.

@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.sherry</groupId>
-    <artifactId>demoProject</artifactId>
+    <artifactId>LearningProject</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>mongodb</artifactId>
@@ -13,4 +13,8 @@
   		<version>3.12.7</version>
   	</dependency>
   </dependencies>
+  <properties>
+  	<maven.compiler.source>1.8</maven.compiler.source>
+  	<maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
 </project>
