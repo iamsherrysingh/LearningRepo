@@ -17,7 +17,8 @@ public class ShoppingDBDemo {
 	static MongoDatabase database;
 	static void connectToDB(String databaseName) {
 	    try{
-	    	MongoClient mongoClient = MongoClients.create("mongodb://root:root@192.168.0.100:27017/?authSource=admin");
+//	    	MongoClient mongoClient = MongoClients.create("mongodb://root:root@192.168.0.100:27017/?authSource=admin");
+	    	MongoClient mongoClient = MongoClients.create("mongodb+srv://root:root@cluster0.7x5gx.mongodb.net/<dbname>?retryWrites=true&w=majority");
 	    	database= mongoClient.getDatabase(databaseName);
 	    	System.out.println("CONNECTED TO DATABASE: "+databaseName);
 	    }catch (Exception e) {
