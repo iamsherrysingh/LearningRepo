@@ -13,7 +13,7 @@ export default {
     methods: mapActions(['finalizeLogin']),
     created(){
         this.finalizeLogin(window.location.hash)
-        
+
     }
     
 }
