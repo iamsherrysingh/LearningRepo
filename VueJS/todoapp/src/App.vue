@@ -5,13 +5,14 @@
       <div>
         <List> </List>
       </div>
+      <!-- <div><ListItem> </ListItem></div>
       <div><ListItem> </ListItem></div>
-      <div><ListItem> </ListItem></div>
-      <div><ListItem> </ListItem></div>
+      <div><ListItem> </ListItem></div> -->
 
     </div>
   </div>
 </template>
+
 
 <script>
 import AppHeader from './components/AppHeader'
@@ -26,6 +27,7 @@ export default {
   },
 }
 </script>
+
 
 <style>
 </style>

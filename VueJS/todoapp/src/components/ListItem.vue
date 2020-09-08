@@ -6,8 +6,10 @@
 
 
 <script>
+
 export default {
-    name:'ListItem',
+    name:'ListItem'
+    
 }
 </script>
 

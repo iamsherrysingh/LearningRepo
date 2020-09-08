@@ -1,10 +1,10 @@
 const state={
-    toDoList: {
-        'Item 1': false,
-        'Item 2': false,
-        'Item 3': true,
-        'Item 4': false
-    }
+    toDoList: [
+        {name: 'Item 1', active: true},
+        {name: 'Item 2', active: false},
+        {name: 'Item 3', active: true},
+        {name: 'Item 4', active: true},
+    ]
 }
 
 
@@ -20,18 +20,13 @@ const mutations={
         state.toDoList= toDoList
     },
 
-    markItemDone(state, item){
-        state.item= true
-    },
-
-    addItem(state, item){
-        state.item= false
-    }
+    
     
 }
 
 
 const actions={
+
 
 }
 
