@@ -1,8 +1,19 @@
 <template>
     <div>
-         <p class='text-muted'
-            v-on:click="s" v-for="item in getToDoList" 
-            v-bind:key="item">{{ item.name }} {{ item.active }} </p>
+         <div v-for="item in getToDoList" 
+              v-bind:key="item">
+
+            <div v-on:click="toggleToDoItem(item.name)">
+                <div v-if="item.active">
+                    {{ item.name }} {{ item.active }} 
+                </div>
+
+                <div v-else class='text-muted'>
+                    <del>{{ item.name }} {{ item.active }} </del>
+                </div>
+            </div>
+
+        </div>
     </div>
 </template>
 
@@ -11,20 +22,16 @@
 import { mapActions, mapGetters } from 'vuex'
 export default {
     name:'List',
+    methods: mapActions(['toggleToDoItem']),
     computed: { ...mapGetters(['getToDoList']) },
-    methods:{
-        s(){
-            console.log("tapped")
-        }
-    }
 }
 
 </script>
 
 
 <style scoped>
-p{
+/* p{
     text-decoration: line-through;
-}
+} */
 
 </style>

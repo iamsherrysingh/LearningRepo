@@ -20,13 +20,24 @@ const mutations={
         state.toDoList= toDoList
     },
 
-    
-    
+    toggleToDoItem(state, itemName){
+        state.toDoList.forEach(item => {
+            if(item.name == itemName)
+                if(item.active == true)
+                    item.active = false
+                else
+                   item.active = true
+        })
+    }
+
 }
 
 
 const actions={
-
+    toggleToDoItem( { state, commit } , itemName){
+        //Modify list in DB
+        commit('toggleToDoItem', itemName)
+    }
 
 }
 
