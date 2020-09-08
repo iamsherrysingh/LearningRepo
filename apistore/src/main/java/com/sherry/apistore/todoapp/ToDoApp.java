@@ -8,6 +8,6 @@ public class ToDoApp {
 
 	@GetMapping("/todoapp")
 	private String sayHello() {
-		return "Hello from ToDo App";
+		return "Hello from To Do App";
 	}
 }
