@@ -1,4 +1,4 @@
-# scratch-project
+# todoapp
 
 ## Project setup
 ```
