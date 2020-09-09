@@ -6,11 +6,11 @@
 
             <div v-on:click="toggleToDoItem(item.name)">
                 <div v-if="item.active">
-                    {{ item.name }}
+                <span>&#9744;</span>  {{ item.name }}
                 </div>
 
                 <div v-else class='text-muted'>
-                    <del>{{ item.name }}</del>
+                    <span>&#10003;</span> <del>{{ item.name }}</del>
                 </div>
             </div>
 
@@ -33,7 +33,7 @@ export default {
 <style scoped>
 .text-justify{
     margin-left: 30px;
-    margin-top:20px
+    margin-top: 20px
 }
 
 
