@@ -1,15 +1,16 @@
 <template>
     <div>
-         <div v-for="item in getToDoList" 
+         <div class='text-justify'
+              v-for="item in getToDoList" 
               v-bind:key="item">
 
             <div v-on:click="toggleToDoItem(item.name)">
                 <div v-if="item.active">
-                    {{ item.name }} {{ item.active }} 
+                    {{ item.name }}
                 </div>
 
                 <div v-else class='text-muted'>
-                    <del>{{ item.name }} {{ item.active }} </del>
+                    <del>{{ item.name }}</del>
                 </div>
             </div>
 
@@ -30,8 +31,10 @@ export default {
 
 
 <style scoped>
-/* p{
-    text-decoration: line-through;
-} */
+.text-justify{
+    margin-left: 30px;
+    margin-top:20px
+}
+
 
 </style>

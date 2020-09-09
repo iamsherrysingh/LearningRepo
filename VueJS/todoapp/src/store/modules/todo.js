@@ -1,9 +1,9 @@
 const state={
     toDoList: [
-        {name: 'Item 1', active: true},
-        {name: 'Item 2', active: false},
-        {name: 'Item 3', active: true},
-        {name: 'Item 4', active: true},
+        {name: 'Eggs from Pharmaprix', active: true},
+        {name: 'Desi Cookies from Beausoir', active: false},
+        {name: 'Veggies from Marche Newon', active: true},
+        {name: 'Nuts from Walmart', active: true},
     ]
 }
 
