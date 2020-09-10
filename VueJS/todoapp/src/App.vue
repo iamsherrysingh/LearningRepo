@@ -5,9 +5,10 @@
       <div>
         <List> </List>
       </div>
-      <!-- <div><ListItem> </ListItem></div>
-      <div><ListItem> </ListItem></div>
-      <div><ListItem> </ListItem></div> -->
+      <div>
+        <InputItem/>
+      </div>
+
 
     </div>
   </div>
@@ -17,13 +18,13 @@
 <script>
 import AppHeader from './components/AppHeader'
 import List from './components/List'
-import ListItem from './components/ListItem'
+import InputItem from './components/InputItem'
 export default {
   name: 'App',
   components: {
     AppHeader,
     List,
-    ListItem
+    InputItem
   },
 }
 </script>

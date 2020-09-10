@@ -28,6 +28,13 @@ const mutations={
                 else
                    item.active = true
         })
+    },
+
+    addItem(state, itemName){
+        state.toDoList.push(
+            { name: itemName,
+              active: true }
+             )
     }
 
 }
@@ -37,8 +44,11 @@ const actions={
     toggleToDoItem( { state, commit } , itemName){
         //Modify list in DB
         commit('toggleToDoItem', itemName)
-    }
+    },
 
+    addItem( {state, commit} , itemName){
+        commit('addItem' , itemName)
+    }
 }
 
 

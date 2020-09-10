@@ -21,6 +21,7 @@
 
 <script>
 import { mapActions, mapGetters } from 'vuex'
+
 export default {
     name:'List',
     methods: mapActions(['toggleToDoItem']),
