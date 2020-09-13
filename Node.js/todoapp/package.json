@@ -1,12 +1,12 @@
 {
-  "name": "todoappbackend",
+  "name": "todoapp",
   "version": "1.0.0",
   "description": "Node.js backend for todoapp",
-  "main": "app.js",
+  "main": "todoapp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Sehajpreet Singh",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"

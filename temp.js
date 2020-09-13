@@ -1,7 +1,4 @@
-function abc(method = 'GET'){
-    console.log(method)
+var promise = new Promise(() => {
+
 }
-
-
-abc(null)
-
+);
